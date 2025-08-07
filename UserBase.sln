@@ -3,9 +3,58 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{E8BA6804-43AC-4989-A2E4-75F0B0A01282}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserBase.Domain", "Core\UserBase.Domain\UserBase.Domain.csproj", "{ED2CE1C1-652F-4D2E-A069-3608F92A6A67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserBase.Application", "Core\UserBase.Application\UserBase.Application.csproj", "{9CA2D5E9-7182-424F-ADFB-C8C6C4B32BAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{BA8F73CE-640F-4EBD-9F8A-A7EA9A5F4EA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{8A3C0438-7725-4ADC-A680-7B197D67C43C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserBase.Infrastructure", "Infrastructure\UserBase.Infrastructure\UserBase.Infrastructure.csproj", "{75818941-D155-41CD-A111-1F49C35F54D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserBase.Persistence", "Infrastructure\UserBase.Persistence\UserBase.Persistence.csproj", "{4FB66959-BFD5-418F-B4DD-9EC76C6526F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserBase.API", "Presentation\UserBase.API\UserBase.API.csproj", "{B52F5D9C-47D5-43AF-8EC8-8ED3EE7286FE}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED2CE1C1-652F-4D2E-A069-3608F92A6A67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2CE1C1-652F-4D2E-A069-3608F92A6A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2CE1C1-652F-4D2E-A069-3608F92A6A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2CE1C1-652F-4D2E-A069-3608F92A6A67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CA2D5E9-7182-424F-ADFB-C8C6C4B32BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CA2D5E9-7182-424F-ADFB-C8C6C4B32BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CA2D5E9-7182-424F-ADFB-C8C6C4B32BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CA2D5E9-7182-424F-ADFB-C8C6C4B32BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75818941-D155-41CD-A111-1F49C35F54D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75818941-D155-41CD-A111-1F49C35F54D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75818941-D155-41CD-A111-1F49C35F54D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75818941-D155-41CD-A111-1F49C35F54D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB66959-BFD5-418F-B4DD-9EC76C6526F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB66959-BFD5-418F-B4DD-9EC76C6526F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB66959-BFD5-418F-B4DD-9EC76C6526F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB66959-BFD5-418F-B4DD-9EC76C6526F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B52F5D9C-47D5-43AF-8EC8-8ED3EE7286FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B52F5D9C-47D5-43AF-8EC8-8ED3EE7286FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B52F5D9C-47D5-43AF-8EC8-8ED3EE7286FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B52F5D9C-47D5-43AF-8EC8-8ED3EE7286FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED2CE1C1-652F-4D2E-A069-3608F92A6A67} = {E8BA6804-43AC-4989-A2E4-75F0B0A01282}
+		{9CA2D5E9-7182-424F-ADFB-C8C6C4B32BAA} = {E8BA6804-43AC-4989-A2E4-75F0B0A01282}
+		{75818941-D155-41CD-A111-1F49C35F54D5} = {BA8F73CE-640F-4EBD-9F8A-A7EA9A5F4EA6}
+		{4FB66959-BFD5-418F-B4DD-9EC76C6526F4} = {BA8F73CE-640F-4EBD-9F8A-A7EA9A5F4EA6}
+		{B52F5D9C-47D5-43AF-8EC8-8ED3EE7286FE} = {8A3C0438-7725-4ADC-A680-7B197D67C43C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4E8D7DF4-076A-4053-B402-D54793DE3EED}
