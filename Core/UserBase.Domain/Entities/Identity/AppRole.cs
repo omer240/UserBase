@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace UserBase.Domain.Entities.Identity
 {
-    public class AppRole : IdentityRole
+    public class AppRole : IdentityRole<Guid>
     {
         public string Description { get; set; }
     }
